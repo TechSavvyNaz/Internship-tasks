@@ -1,0 +1,218 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/image-gallary/DALL·E\ 2024-08-20\ 01.08.26\ -\ Generate\ a\ professional\ LinkedIn\ profile\ picture\ of\ a\ woman\ in\ a\ modest\ outfit\ including\ a\ headscarf\,\ with\ neutral\ background\ lighting\ suitable\ for\ a\ .webp');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e5533d;
+}
+
+/* About Section */
+#about {
+    padding: 5em 2em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 1em;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 5em 2em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.project button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project button:hover {
+    background-color: #e5533d;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5em 2em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact button[type="submit"] {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #e5533d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+}

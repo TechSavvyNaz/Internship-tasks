@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <h1>Welcome to my Portfolio</h1>
+            <p>I'm a professional developer with a passion for building innovative solutions.</p>
+            <button onclick="scrollToSection('#about')">Learn More</button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I have over 5 years of experience in the industry, with a strong background in HTML, CSS, JavaScript, and more.</p>
+            <img src="/image-gallary/DALL·E 2024-08-20 01.08.26 - Generate a professional LinkedIn profile picture of a woman in a modest outfit including a headscarf, with neutral background lighting suitable for a .webp" alt="Profile Picture">
+            <div class="skills">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="/image-gallary/website-redesign.jpeg" alt="Project 1">
+                    <h3>Project 1: Website Redesign</h3>
+                    <p>A responsive website redesign for a local business.</p>
+                    <button>View Live</button>
+                </div>
+                <div class="project">
+                    <img src="/image-gallary/mobile-app-development.jpeg" alt="Project 2">
+                    <h3>Project 2: Mobile App Development</h3>
+                    <p>A mobile app built for a startup, using React Native.</p>
+                    <button>View Live</button>
+                </div>
+                <div class="project">
+                    <img src="/image-gallary/e-commerece.jpeg" alt="Project 3">
+                    <h3>Project 3: E-commerce Website</h3>
+                    <p>An e-commerce website built using Shopify and Liquid.</p>
+                    <button>View Live</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Want to discuss a project or just say hi?</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Professional Portfolio</p>
+    </footer>
+
+    <script src="/javascript/portfolio.js"></script>
+</body>
+</html>
